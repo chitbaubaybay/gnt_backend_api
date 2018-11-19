@@ -1,0 +1,17 @@
+@(heroes: List[Hero])
+
+<html>
+  <style>
+    .hero {
+      border: 1px solid red;
+    }
+  </style>
+  <body>
+    <form method="POST" action="/hero">
+      <input type="text" name="level" value="19" >
+      <input type="submit" value="create" >
+
+    </form>
+
+  </body>
+</html>
