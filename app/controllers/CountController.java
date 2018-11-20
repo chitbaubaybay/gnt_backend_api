@@ -30,7 +30,7 @@ public class CountController extends Controller {
      * requests by an entry in the <code>routes</code> config file.
      */
     public Result count() {
-        return ok("Hello all");
+        return ok(Integer.toString(counter.nextCount()));
     }
 
 }

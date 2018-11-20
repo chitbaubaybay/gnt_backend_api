@@ -25,8 +25,6 @@ public class HeroController extends Controller {
         this.heroes = new ArrayList<>();
     }
 
-
-
     public Result create() {
         Hero hero = play.libs.Json.fromJson(ctx().request().body().asJson(), Hero.class);
         if(hero.getLevel() < 1) {
